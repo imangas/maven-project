@@ -1,11 +1,9 @@
 pipeline {
     agent {
-        agent {
-            docker {
+        docker {
             reuseNode true
             label 'Maven-3.5'
             image 'maven:3.5.3-jdk-8-alpine'
-            }
         }
     }
     stages {
